@@ -16,7 +16,7 @@ public class UsersController {
     private UserService userService;
 
     @GetMapping("/users/:id")
-    public Optional<Users> getUser(final Long id) {
-        return userService.getUser(id);
+    public Optional<Users> getUserById(final Long id) {
+        return userService.getUserById(id);
     }
 }

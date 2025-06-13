@@ -20,7 +20,7 @@ public class AuthentificationService {
     }
 
     public LoginResponseDto authenticate(LoginRequestDto loginRequestDto) {
-        Users user = userRepository.findByUserName(loginRequestDto.getEmail());
+        Users user = userRepository.findByEmail(loginRequestDto.getEmail());
         if (user != null) {
             String token = jwtService.generateToken(loginRequestDto.getEmail());
             return new LoginResponseDto(token);

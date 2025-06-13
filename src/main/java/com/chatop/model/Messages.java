@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "employees")
+@Table(name = "messages")
 public class Messages {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class Messages {
     @Column(name = "rental_id")
     private String rentalId;
 
-    @Column(name="user_id")
+    @Column(name = "user_id")
     private String userId;
 
     private String message;

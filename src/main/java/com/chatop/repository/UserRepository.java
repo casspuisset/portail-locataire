@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.chatop.model.Users;
 
 @Repository
-public interface UserRepository extends JpaRepository<Users, Long>{
-    public Users findByUserName(String email);
+public interface UserRepository extends JpaRepository<Users, Long> {
+    Users findByEmail(String email);
 }
