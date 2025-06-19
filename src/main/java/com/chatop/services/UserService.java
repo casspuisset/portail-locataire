@@ -1,5 +1,6 @@
 package com.chatop.services;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,6 +44,8 @@ public class UserService {
             user.setEmail(registerRequestDto.getEmail());
             user.setPassword(passwordEncoded);
             user.setName(registerRequestDto.getName());
+            user.setCreatedAt(LocalDateTime.now());
+            user.setUpdatedAt(LocalDateTime.now());
             userRepository.save(user);
         }
     }

@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 import com.chatop.model.Messages;
 
 @Repository
-public interface MessagesRepository extends JpaRepository<Messages, Long>{
+public interface MessagesRepository extends JpaRepository<Messages, Long> {
 }

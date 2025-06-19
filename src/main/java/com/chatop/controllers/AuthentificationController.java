@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.chatop.dto.LoginRequestDto;
 import com.chatop.dto.LoginResponseDto;
 import com.chatop.dto.RegisterRequestDto;
-import com.chatop.model.Users;
 import com.chatop.repository.UserRepository;
 import com.chatop.services.AuthentificationService;
 import com.chatop.services.JWTService;

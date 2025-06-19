@@ -1,5 +1,7 @@
 package com.chatop.model;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -18,10 +20,16 @@ public class Messages {
     private Long id;
 
     @Column(name = "rental_id")
-    private String rentalId;
+    private Long rentalId;
 
     @Column(name = "user_id")
-    private String userId;
+    private Long userId;
 
     private String message;
+
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
+
+    @Column(name = "updated at")
+    private LocalDateTime updatedAt;
 }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 // import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.chatop.dto.RentalsRequestDto;
 import com.chatop.model.Rentals;
 import com.chatop.services.RentalsService;
 
@@ -28,7 +29,7 @@ public class RentalsController {
     }
 
     @PostMapping("rentals")
-    public Rentals postRentals(Rentals rentals) {
+    public Rentals postRentals(RentalsRequestDto rentals) {
         return rentalsService.postRentals(rentals);
     }
 

@@ -1,5 +1,7 @@
 package com.chatop.model;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -28,5 +30,11 @@ public class Rentals {
     private String description;
 
     @Column(name = "owner_id")
-    private String ownerId;
+    private Long ownerId;
+
+    @Column(name = "createdAt_at")
+    private LocalDateTime createdAt;
+
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
 }
